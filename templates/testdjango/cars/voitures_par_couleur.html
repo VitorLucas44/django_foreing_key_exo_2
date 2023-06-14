@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for couleur in couleurs %}
+    <h2>{{ couleur.nom }}</h2>
+    {% for voiture in couleur.voiture_set.all %}
+        <p>{{ voiture.marque }} ({{ voiture.annee_creation }})</p>
+    {% endfor %}
+{% endfor %}
+<h1>efzezaezezfa/h1>
+{% endblock content %}

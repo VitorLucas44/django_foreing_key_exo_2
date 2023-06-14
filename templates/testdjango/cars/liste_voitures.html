@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for voiture in voitures %}
+    <p>{{ voiture.marque }} ({{ voiture.annee_creation }}) - {{ voiture.couleur.nom }}</p>
+{% endfor %}
+<h1>efzezaezezfa/h1>
+{% endblock content %}
